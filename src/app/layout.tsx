@@ -30,6 +30,7 @@ export default function RootLayout({
         />
         {children}
         <VisualEditsMessenger />
+        <Script src="https://cdn.jotfor.ms/agent/embedjs/019932d81fb47bb69ca58304864789a8e076/embed.js" strategy="afterInteractive" />
       </body>
     </html>
   );
