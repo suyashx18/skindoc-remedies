@@ -1,3 +1,5 @@
+import Script from "next/script";
+
 export default function Page() {
   return (
     <main className="min-h-screen bg-background">
@@ -7,7 +9,7 @@ export default function Page() {
           Your site is deployed successfully. We'll add sections as components become available.
         </p>
       </section>
-      {/* Jotform script is now loaded globally via root layout */}
+      <Script src="https://cdn.jotfor.ms/agent/embedjs/019932d81fb47bb69ca58304864789a8e076/embed.js" strategy="afterInteractive" />
     </main>
   );
 }
